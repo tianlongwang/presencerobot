@@ -4,7 +4,7 @@ import time
 import tokinit
 import os
 
-#ip = "140.180.9.84"
+ip = "192.168.1.238"
 
 @route('/control')
 def control():
@@ -40,4 +40,4 @@ run(host='0.0.0.0', port=port)
 		
 #run(server='gae')
 #run(server='gevent', port=os.environ.get('PORT', 5000))
-#run(host=ip, port=8080)
+run(host=ip, port=8080)
